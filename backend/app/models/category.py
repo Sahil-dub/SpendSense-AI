@@ -6,5 +6,5 @@ class Category(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False, unique=True)
-    flexibility_level = Column(String, nullable=False)  # fixed | semi | flexible
+    flexibility_level = Column(String, nullable=False)
     monthly_threshold = Column(Integer, default=0)
